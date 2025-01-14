@@ -1,12 +1,32 @@
-export default function MemoContainer() {
+export default function MemoContainer({ memo, setMemo }) {
   return (
     <div className="MemoContainer">
       <div>
-        <input type="text" className="MemoContainerTitle"></input>
+        <input
+          type="text"
+          className="MemoContainerTitle"
+          value={memo.title}
+          onChange={(e) => {
+            setMemo({
+              ...memo,
+              title: e.target.value,
+              updatedAt: new Date().getTime(),
+            });
+          }}
+        />
       </div>
-      <div>
-        <textarea className="MemoContainerContent" />
-      </div>
+      <div></div>
+      <textarea
+        className="MemoContainerContent"
+        value={memo.content}
+        onChange={(e) => {
+          setMemo({
+            ...memo,
+            content: e.target.value,
+            updatedAt: new Date().getTime(),
+          });
+        }}
+      />
     </div>
   );
 }
