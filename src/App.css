@@ -8,6 +8,23 @@
   width: 200px;
 }
 
+.MemoItem {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.MemoItem.selected {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background-color: rgba(100, 100, 100, 0.5);
+  font-weight: 500;
+}
+
 .MemoContainer {
   background-color: beige;
   flex: 1;
