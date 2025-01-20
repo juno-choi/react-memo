@@ -4,10 +4,10 @@ import SideBarFooter from './SideBarFooter';
 
 export default function SideBar({
   memos,
+  addMemo,
   selectedMemoIndex,
   setSelectedMemoIndex,
 }) {
-  console.log(selectedMemoIndex);
   return (
     <div className="SideBar">
       <SideBarHeader />
@@ -16,7 +16,7 @@ export default function SideBar({
         selectedMemoIndex={selectedMemoIndex}
         setSelectedMemoIndex={setSelectedMemoIndex}
       ></MemoList>
-      <SideBarFooter />
+      <SideBarFooter onClick={addMemo} />
     </div>
   );
 }
