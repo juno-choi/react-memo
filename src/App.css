@@ -8,6 +8,28 @@
   width: 200px;
 }
 
+.side-bar-footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.side-bar-footer__add-button {
+  background: none;
+  border-radius: 100px;
+  border: 2px solid;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  padding: 10px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 .MemoItem {
   width: 100%;
   white-space: nowrap;
